@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--background-headings-buttons);
+    margin: 4rem auto;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    border-radius: 10px;
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    color: var(--background-headings-buttons);
+    font-size: 15px;
+    overflow: hidden;
+}
+.card_1, .card_2, .card_3{
+    padding: 3rem;
+    line-height: 1.5;
+}
+.card_1 {
+    background-color: var(--Bright-orange);
+}
+.card_2 {
+    background-color: var(--Dark-cyan);
+}
+.card_3 {
+    background-color:var(--Very-dark-cyan);
+}
+.paratext {
+    color: var(--paragraphs);
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    padding: 0 0 1.25rem 0;
+}
+.titlecard {
+    text-transform: uppercase;
+    padding: 1.25rem 0 1.25rem 0;
+}
+.icon{
+    max-width: 25%;
+    display: block;
+}
+.learn-more-btn-1, .learn-more-btn-2, .learn-more-btn-3{
+    font-family: "Lexend Deca";
+    background-color: var(--background-headings-buttons);
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    border-radius: 25px;
+    border:none;
+}
+.learn-more-btn-1 {
+    color: var(--Bright-orange);
+}
+.learn-more-btn-2 {
+    color: var(--Dark-cyan);
+}
+.learn-more-btn-3 {
+    color: var(--Very-dark-cyan);
+}
+
+.attribution { 
+    padding-top: 5rem;
+    font-size: 15px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 800px) {
+    body {
+        max-width: 910px;
+    }
+    .container {
+        display: flex;
+    }
+    .paratext {
+        padding: 0 0 5rem 0;
+    }
+}
